@@ -4,8 +4,8 @@
 ## Author: 咸鱼
 ## Notes: MyClassicUI
 ## DefaultState: enabled
-MyClassicUI.lua
 PlayerFrame.lua
 DeBuffMove.lua
 ButtonMove.lua
 PartyMemberFrame.lua
+tip.lua
