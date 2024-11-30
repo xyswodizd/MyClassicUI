@@ -1,10 +1,10 @@
 ## Interface: 11505
-## Title: Mytool
+## Title: MyClassicUI
 ## Version: 1.0
 ## Author: 咸鱼
-## Notes: 咸鱼的lua
+## Notes: MyClassicUI
 ## DefaultState: enabled
-Mytool.lua
+MyClassicUI.lua
 PlayerFrame.lua
 DeBuffMove.lua
 ButtonMove.lua
