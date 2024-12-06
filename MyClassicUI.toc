@@ -9,3 +9,7 @@ DeBuffMove.lua
 ButtonMove.lua
 PartyMemberFrame.lua
 tip.lua
+hardcoredeaths.lua
+AutoRepair.lua
+AutoSell.lua
+AttackTimer.xml
