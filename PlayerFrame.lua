@@ -32,6 +32,7 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript("OnEvent", function(self, event)
 	PlayerName:SetPoint("CENTER", PlayerFrameHealthBar, "CENTER", 0, 24)---玩家头像名字位置
 	PlayerFrameHealthBarTextLeft:SetPoint("left", PlayerFrameHealthBar, "left", 4, -3)---在生命值和百分比同时显示时，玩家生命值百分比位置
+	PlayerFrameHealthBarText:SetPoint("CENTER", PlayerFrameHealthBar, "CENTER", 0, -3)---在生命值单独显示时，玩家生命值百分比位置
 	PlayerFrameHealthBarTextRight:SetPoint("Right", PlayerFrameHealthBar, "Right", -1, -3)---在生命值和百分比同时显示时，玩家生命值位置
 	TargetFrameTextureFrameName:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, 25)---目标头像名字位置
 	TargetFrameHealthBarTextLeft:SetPoint("left", TargetFrameHealthBar, "left", 1, -1)---在生命值和百分比同时显示时，目标生命值百分比位置
@@ -46,4 +47,6 @@ PlayerFrame:UnregisterEvent("UNIT_COMBAT")-- 隐藏玩家头像伤害治疗数�
 PetFrame:UnregisterEvent("UNIT_COMBAT")--隐藏宠物头像伤害治疗数字
 TargetFrameToT:ClearAllPoints()--清除锚点
 TargetFrameToT:SetScale(1.2)--目标的目标缩放
-TargetFrameToT:SetPoint("BOTTOMRIGHT", TargetFrame, "BOTTOMRIGHT", -17, -25)--目标的目标位置
+TargetFrameToT:SetPoint("BOTTOMRIGHT", TargetFrame, "BOTTOMRIGHT", -17, 75)--目标的目标位置
+TargetFrameToTTextureFrameName:ClearAllPoints()--清除锚点
+TargetFrameToTTextureFrameName:SetPoint("left", TargetFrameToT, "left", 45, 15)--目标的目标名字位置
